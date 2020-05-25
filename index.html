@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylepast.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="kakaotalk://leverage?action=sendtext&message=나는 원숭이다.">
+	<meta property="og:title" content="스타벅스">
+	<meta property="og:description" content="스타벅스 50주년 이벤트">
+	<meta property="og:image" content="01.17860979.1">
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+		.no-drag {
+			-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+		} 
+	</style>
+    <style type="text/css">
+    </style>
+    <style>
+    </style>
+    <script language="JavaScript">
+
+//////////F12 disable code////////////////////////
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+	document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            //alert('No F-keys');
+            return false;
+        }
+    }
+/////////////////////end///////////////////////
+	
+</script>
+
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' style="text-align: center;">
+<script>alert('PC에서만 사용 가능합니다! 모바일 버전은 개발 중이에요!')</script>
+
+	<div style="width: 60%; margin: auto;">
+		<h1 id="del" style="text-align: center;">1. 다섯 손가락을 키보드에 사진과 같이 올려주세요. 한/영키로 영어로 전환해주세요.</h1>
+		<img id="del6" src="unnamed.jpg">
+		<h1  id="del2" style="text-align: center;">2. 시작 버튼을 누른 뒤, 화면에 뜨는 텍스트 상자를 클릭해주세요.</h1>
+		<h1 id="del3" style="text-align: center;">3. 시작 문구가 뜨면 키보드를 눌러주세요!(단, 위 사진에서 손가락을 움직이시면 안됩니다.)</h1>
+		<h1 id="del4" style="text-align: center;">4. 엄지손가락은 스페이스를 눌러주세요.</h1>
+		<span id="start" style="font-size: 25px;"></span><br>
+		<button id="del5" type="button" class="btn btn-success" onclick="start()">시작</button>
+	</div>
+	
+	
+	<input type='text' id='input1' style="display: none; margin: auto;"/>
+ 
+	<script>
+		function start() {
+			document.getElementById("start").innerHTML = "3";
+			document.getElementById("del").innerHTML = "";
+			document.getElementById("del2").innerHTML = "";
+			document.getElementById("del3").innerHTML = "";
+			document.getElementById("del4").innerHTML = "";
+			document.getElementById("del5").style.display = "none";
+			document.getElementById("del6").style.display = "none";
+			setTimeout(function() {
+			  document.getElementById("start").innerHTML = "2";
+			}, 1000);
+			setTimeout(function() {
+			  document.getElementById("start").innerHTML = "1";
+			}, 2000);
+			setTimeout(function() {
+			  document.getElementById("start").innerHTML = "start!";
+			}, 3000);
+			document.getElementById("input1").style.display = "block";
+			setTimeout(function() {
+			  alert("당신의 왼손 소지 사용 수 : " + a);
+			  alert("당신의 왼손 약지 사용 수 : " + s);
+			  alert("당신의 왼손 검지 사용 수 : " + d);
+			  alert("당신의 왼손 중지 사용 수 : " + f);
+			  alert("당신의 왼손과 오른손 엄지 사용 수 : " + sp);
+			  alert("당신의 오른손 검지 사용 수 : " + j);
+			  alert("당신의 오른손 중지 사용 수 : " + k);
+			  alert("당신의 오른손 약지 사용 수 : " + l);
+			  alert("당신의 오른손 소지 사용 수 : " + sm);
+			}, 13000);			
+		}
+		
+		
+		var input1 = document.getElementById('input1')
+		var a = 0;
+		var s = 0;
+		var d = 0;
+		var f = 0;
+		var j = 0;
+		var k = 0;
+		var l = 0;
+		var sm = 0;
+		var sp = 0;
+		input1.onkeydown = function(event) {
+			if(window.event.keyCode=="65") {
+				a = a + 1;
+			}
+			if(window.event.keyCode=="83") {
+				s = s + 1;
+			}
+			if(window.event.keyCode=="68") {
+				d = d + 1;
+			}
+			if(window.event.keyCode=="70") {
+				f = f + 1;
+			}
+			if(window.event.keyCode=="74") {
+				j = j + 1;
+			}
+			if(window.event.keyCode=="75") {
+				k = k + 1;
+			}
+			if(window.event.keyCode=="76") {
+				l = l + 1;
+			}
+			if(window.event.keyCode=="186") {
+				sm = sm + 1;
+			}
+			if(window.event.keyCode=="32") {
+				sp = sp + 1;
+			}
+		}
+	</script>
+</body>
+</html>
